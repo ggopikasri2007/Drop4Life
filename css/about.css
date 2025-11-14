@@ -1,0 +1,173 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fff7f7;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    margin: 0;
+  
+     }
+.container { 
+     width: 80%; 
+    margin: 0 auto;
+}
+header { 
+    background: #b30000; 
+    color: white;
+    padding: 20px 0; }
+header h1 {
+     display: inline-block; 
+     margin: 0; 
+}
+nav { 
+    float: right;
+   
+     }
+nav a {
+     color: white; 
+     text-decoration: none; 
+     margin: 0 15px; 
+     font-weight: 500;
+     }
+nav a:hover, .active {
+     text-decoration: underline;
+     }
+
+
+.hero-section {
+  position: relative;
+
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+
+.blood-groups {
+  padding: 80px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+.blood-groups h2 {
+  color: #b30000;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.group-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.group-card {
+  background: #ffeaea;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.group-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.group-card h3 {
+  color: #b30000;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.group-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.group-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.image-gallery {
+  text-align: center;
+  padding: 80px 10%;
+  background: #fff4f4;
+}
+
+.image-gallery h2 {
+  color: #b30000;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+

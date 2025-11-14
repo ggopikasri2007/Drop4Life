@@ -1,0 +1,86 @@
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    margin: 0;
+  
+     }
+.container { 
+     width: 80%; 
+    margin: 0 auto;
+}
+header { 
+    background: #b30000; 
+    color: white;
+    padding: 20px 0; }
+header h1 {
+     display: inline-block; 
+     margin: 0; 
+}
+nav { 
+    float: right;
+   
+     }
+nav a {
+     color: white; 
+     text-decoration: none; 
+     margin: 0 15px; 
+     font-weight: 500;
+     }
+nav a:hover, .active {
+     text-decoration: underline;
+     }
+.hero {
+     background: #ffe6e6; 
+     text-align: center; 
+     padding: 120px 0; }
+.hero h2 { 
+    color: #b30000;
+     font-size: 36px; }
+.hero p {
+     font-size: 18px; 
+     color: #444; 
+    }
+
+footer {
+     background: #222;
+      color: white; text-align: 
+      center; padding: 15px 0; 
+      clear: both;
+       margin-top: 50px;
+     }
+#benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color:blue;
+}
+
+.benefits-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color:white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: forestgreen;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}

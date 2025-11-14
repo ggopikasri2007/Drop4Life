@@ -1,0 +1,186 @@
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    margin: 0;
+  
+     }
+.container { 
+     width: 80%; 
+    margin: 0 auto;
+}
+header { 
+    background: #b30000; 
+    color: white;
+    padding: 20px 0; }
+header h1 {
+     display: inline-block; 
+     margin: 0; 
+}
+nav { 
+    float: right;
+   
+     }
+nav a {
+     color: white; 
+     text-decoration: none; 
+     margin: 0 15px; 
+     font-weight: 500;
+     }
+nav a:hover, .active {
+     text-decoration: underline;
+     }
+
+.donor-hero {
+ 
+  height: 55vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.donor-hero .overlay {
+  background: rgba(179, 0, 0, 0.7);
+  padding: 100px;
+  border-radius: 40px;
+}
+
+.search-section {
+  background: #ffe6e6;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.search-section h3 {
+  color: #b30000;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.search-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.search-form select{
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.search-form button {
+  background: #b30000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+ 
+}
+
+.search-form button:hover {
+  background: #990000;
+}
+
+
+.awareness {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: linear-gradient(to right, #fff, #ffeaea);
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.awareness img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.awareness .text {
+  max-width: 600px;
+}
+
+.awareness h2 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.awareness p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.awareness ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.awareness ul li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+
+.cta {
+  background: #b30000;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+ 
+}
+
+.cta:hover {
+  background: #990000;
+}
+
+  
+
+.testimonials {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.testimonials h2 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.testimonials blockquote {
+  background: white;
+  
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 500px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.testimonials span {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-weight: bold;
+}
+
+
+footer {
+     background: #222;
+      color: white; text-align: 
+      center; padding: 15px 0; 
+      clear: both;
+       margin-top: 50px;
+     }
