@@ -35,9 +35,9 @@ nav a:hover, .active {
      text-decoration: underline;
      }
 
-/* MOTIVATIONAL IMAGE SECTION */
+
 .motivation {
-  background: url('/images/hero-blood-donation.jpg') no-repeat center center/cover;
+
   height: 65vh;
   position: relative;
   display: flex;
@@ -62,7 +62,7 @@ nav a:hover, .active {
   font-size: 1.1rem;
 }
 
-/* DONATE SECTION */
+
 .donate {
   padding: 80px 0;
   text-align: center;
@@ -75,13 +75,8 @@ nav a:hover, .active {
   margin-bottom: 10px;
 }
 
-.intro {
-  color: #555;
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-}
 
-/* FORM */
+ 
 .donate-form {
   background: #fff7f7;
   padding: 40px;
@@ -123,7 +118,7 @@ nav a:hover, .active {
   transform: scale(1.05);
 }
 
-/* IMAGE SECTION BELOW FORM */
+
 .gallery-section {
   background: #fff7f7;
   padding: 60px 0;
@@ -151,7 +146,7 @@ nav a:hover, .active {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* FOOTER */
+
 footer {
   background: #222;
   color: white;
@@ -160,30 +155,4 @@ footer {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .motivation {
-    height: 50vh;
-  }
-
-  .donate-form input,
-  .donate-form select,
-  .donate-form button {
-    width: 90%;
-  }
-
-  .gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-}
