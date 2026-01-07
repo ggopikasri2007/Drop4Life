@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
 }
 header { 
-    background: #b30000; 
+    background: #1E3A8A; 
     color: white;
     padding: 20px 0; }
 header h1 {
@@ -37,7 +37,7 @@ nav a:hover, .active {
 }
 
 footer {
-     background: #222;
+     background: #1E3A8A;
       color: white; text-align: 
       center; padding: 15px 0; 
       clear: both;

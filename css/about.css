@@ -2,7 +2,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #fff7f7;
+  background:  #F1F5F9;
   color: #333;
 }
 
@@ -22,7 +22,7 @@ body {
     margin: 0 auto;
 }
 header { 
-    background: #b30000; 
+    background:  #1E3A8A; 
     color: white;
     padding: 20px 0; }
 header h1 {
@@ -51,7 +51,7 @@ nav a:hover, .active {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color:#0F172A;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@ nav a:hover, .active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  background:  #F1F5F9(0, 0, 0, 0.45);
 }
 
 .hero-content {
@@ -84,11 +84,11 @@ nav a:hover, .active {
 .blood-groups {
   padding: 80px 10%;
   text-align: center;
-  background: #fff;
+  background:  #F1F5F9;
 }
 
 .blood-groups h2 {
-  color: #b30000;
+  color: #0F172A;
   font-size: 2rem;
   margin-bottom: 50px;
 }
@@ -100,7 +100,7 @@ nav a:hover, .active {
 }
 
 .group-card {
-  background: #ffeaea;
+  background: #F1F5F9 ;
   padding: 25px 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -113,7 +113,7 @@ nav a:hover, .active {
 }
 
 .group-card h3 {
-  color: #b30000;
+  color: #0F172A;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -132,11 +132,11 @@ nav a:hover, .active {
 .image-gallery {
   text-align: center;
   padding: 80px 10%;
-  background: #fff4f4;
+  background:#F1F5F9 ;
 }
 
 .image-gallery h2 {
-  color: #b30000;
+  color: #0F172A;
   margin-bottom: 30px;
   font-size: 2rem;
 }
@@ -163,7 +163,7 @@ nav a:hover, .active {
 
 
 footer {
-  background: #222;
+  background:  #1E3A8A;
   color: white;
   text-align: center;
   padding: 15px 0;
