@@ -1,4 +1,4 @@
-
+/*  
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -153,6 +153,124 @@ footer {
   text-align: center;
   padding: 15px 0;
   font-size: 0.9rem;
+}  
+ */
+/* donate.css */
+
+/* General body / container styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fff7f7;
+  color: #333;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
+/* Header / Navbar */
+header {
+  background: #1E3A8A;
+  color: white;
+  padding: 20px 0;
+}
+header h1 {
+  display: inline-block;
+  margin: 0;
+}
+nav {
+  float: right;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* Highlight Donate link for active page */
+nav a.active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+  background: #F1F5F9;
+  text-align: center;
+  padding: 80px 0;
+}
+.hero h2 {
+  color: #1E3A8A;
+  font-size: 36px;
+}
+.hero p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Donate Form Section */
+.donate {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.donate h2 {
+  color: #0F172A;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.donate-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.donate-form input,
+.donate-form select,
+.donate-form button {
+  display: block;
+  margin: 12px auto;
+  padding: 12px;
+  width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.donate-form input:focus,
+.donate-form select:focus {
+  outline: none;
+  border-color: #1E3A8A;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+.donate-form button {
+  background: linear-gradient(90deg, #2563EB, #1E3A8A);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.donate-form button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
