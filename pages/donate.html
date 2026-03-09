@@ -1,55 +1,86 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donate Blood | Drop4Life</title>
-  <link rel="stylesheet" href="../css/donate.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Donate Blood | Drop4Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/donate.css" />
+  </head>
 
+  <body>
+    <header>
+      <div class="container">
+        <h1>Drop4Life</h1>
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="donate.html">Donate</a>
+          <a href="myprofile.html">My Profile</a>
+          <a href="../index.html">Logout</a>
+        </nav>
+      </div>
+    </header>
 
-<header>
-  <div class="container">
-    <h1>Drop4Life</h1>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="donate.html" class="active">Donate</a>
-      <a href="find_donors.html">Find Donors</a>
-      <a href="blood_bank.html">Blood Bank</a>
-    </nav>
-  </div>
-</header>
+    <!-- HERO SECTION -->
 
+    <section class="hero">
+      <h2>Be Someone's Lifeline</h2>
 
-<section class="donate container">
-  <h2>Register as a Donor</h2>
-  <form class="donate-form" >
-    <input type="text" placeholder="Full Name" required /><br />
-    <input type="number" placeholder="Age" required /><br />
-    <select required>
-      <option value="" disabled selected>Select Blood Group</option>
-      <option>O+</option>
-      <option>O−</option>
-      <option>A+</option>
-      <option>A−</option>
-      <option>B+</option>
-      <option>B−</option>
-      <option>AB+</option>
-      <option>AB−</option>
-    </select><br />
-    <input type="text" placeholder="City" required /><br />
-    <input type="tel" placeholder="Contact Number" required /><br />
-    <button type="submit">Register Now</button>
-  </form>
-</section>
+      <p>
+        Every drop of blood you donate can save up to <b>3 lives</b>. Your
+        kindness can give someone another chance to live.
+      </p>
+    </section>
 
+    <!-- DONATION ACTION CARD -->
 
-<footer>
-  <p>© 2025 Blood Donation | All Rights Reserved</p>
-</footer>
+    <section class="donate-section">
+      <div class="donate-card">
+        <h2>Donation Status</h2>
 
-</body>
+        <p class="donate-text">
+          If you recently donated blood after receiving a request, please
+          confirm it here so we can update your availability.
+        </p>
+
+        <div id="statusBox" class="status-box">
+          Checking your eligibility...
+        </div>
+
+        <div class="btn-group">
+          <button id="donatedBtn">❤️ I Have Donated</button>
+
+          <button id="notDonatedBtn">I Did Not Donate Yet</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOOD FACTS -->
+
+    <section class="facts">
+      <h2>Why Blood Donation Matters</h2>
+
+      <div class="facts-grid">
+        <div class="fact-card">
+          <h3>1 Donation</h3>
+          <p>One blood donation can save up to 3 lives.</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>Every 2 Seconds</h3>
+          <p>Someone in the world needs blood every 2 seconds.</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>Only 3 Months</h3>
+          <p>You can donate blood again after 90 days.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Drop4Life | Together We Save Lives</p>
+    </footer>
+
+    <script src="../js/donate.js"></script>
+  </body>
 </html>
