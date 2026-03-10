@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
    
-    fetch(`http://127.0.0.1:8000/auth/user/${userId}`)
+    fetch(`\https://blooddonationbackend-beryl.vercel.app/auth/user/${userId}`)
         .then(res => res.json())
         .then(user => {
             document.getElementById("full_name").value = user.full_name;
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             phone: document.getElementById("phone").value
         };
 
-        fetch(`http://127.0.0.1:8000/auth/user/${userId}`, {
+        fetch(`https://blooddonationbackend-beryl.vercel.app/auth/user/${userId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(updatedData)

@@ -1,4 +1,4 @@
-/* body {
+ body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
@@ -85,109 +85,8 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 250px;
-} */
+} 
 
-/* GLOBAL */
-body {
-  font-family: "Segoe UI", sans-serif;
-  margin: 0;
-  background-color: #f1f5f9;
-}
-
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* HEADER */
-header {
-  background-color: #1e3a8a;
-  padding: 20px 0;
-  color: white;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-/* NAVBAR */
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover,
-nav a.active {
-  text-decoration: underline;
-}
-
-/* PROFILE SECTION */
-.profile-section {
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
-}
-
-.profile-card {
-  background: #ffffff;
-  width: 100%;
-  max-width: 400px;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.15);
-  border: 1px solid #cbd5e1;
-}
-
-.profile-card h2 {
-  text-align: center;
-  color: #1e3a8a;
-  margin-bottom: 30px;
-}
-
-.profile-info p {
-  font-size: 15px;
-  margin: 12px 0;
-  color: #333;
-}
-
-/* EDIT BUTTON */
-.edit-btn {
-  display: block;
-  text-align: center;
-  margin-top: 25px;
-  padding: 12px;
-  background-color: #1e3a8a;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-
-.edit-btn:hover {
-  background-color: #2563eb;
-}
-
-/* FOOTER */
-footer {
-  background: #1e3a8a;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 60px;
-}
 
 /* ---------------- */
 /* MOBILE RESPONSIVE */

@@ -10,7 +10,7 @@ document.getElementById("requestForm").addEventListener("submit", function(e) {
         units_needed: parseInt(formData.get("units_needed"))
     };
 
-    fetch("http://localhost:8000/requests/", {
+    fetch("https://blooddonationbackend-beryl.vercel.app/request/", {  // ✅ corrected URL
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -18,27 +18,20 @@ document.getElementById("requestForm").addEventListener("submit", function(e) {
         body: JSON.stringify(data)
     })
     .then(function(response) {
-
         if (!response.ok) {
             throw new Error("Failed to submit request");
         }
-
         return response.json();
     })
     .then(function(result) {
-
         document.getElementById("message").innerText =
             "Request submitted successfully!";
-
         console.log(result);
-
         document.getElementById("requestForm").reset();
     })
     .catch(function(error) {
-
         document.getElementById("message").innerText =
             "Error: " + error.message;
-
         console.error(error);
     });
 });

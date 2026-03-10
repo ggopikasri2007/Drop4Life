@@ -1,6 +1,6 @@
 const container = document.getElementById("donor-container");
 
-fetch("http://localhost:8000/donation/available-donors")
+fetch("https://blooddonationbackend-beryl.vercel.app/donation/available-donors")
   .then(res => {
     if (!res.ok) throw new Error("Network response was not ok");
     return res.json();

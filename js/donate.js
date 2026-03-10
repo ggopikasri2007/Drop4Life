@@ -27,7 +27,7 @@ function formatDate(dateString){
 
 donatedBtn.addEventListener("click", function(){
 
-fetch(`http://127.0.0.1:8000/donation/confirm/${userId}`,{
+fetch(`https://blooddonationbackend-beryl.vercel.app/donation/confirm/${userId}`,{
     method:"POST"
 })
 

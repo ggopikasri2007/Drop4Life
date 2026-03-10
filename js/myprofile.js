@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    fetch(`http://127.0.0.1:8000/auth/user/${userId}`)
+    fetch(`https://blooddonationbackend-beryl.vercel.app/auth/user/${userId}`)
         .then(res => {
             if (!res.ok) throw new Error("Failed to load profile");
             return res.json();

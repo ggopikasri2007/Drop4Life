@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             password: document.querySelector("input[name='password']").value
         };
 
-        fetch("http://127.0.0.1:8000/auth/login", {
+        fetch("https://blooddonationbackend-beryl.vercel.app/auth/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(loginData)

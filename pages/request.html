@@ -1,48 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Patient Blood Request</title>
-    <link rel="stylesheet" href="/css/request.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/request.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
+      <div class="container">
         <h1>Drop4Life</h1>
         <nav>
-          <a href="index.html" class="active">Home</a>
-          <a href="pages/about.html">About</a>
-          <a href="pages/find_donors.html">Find Donors</a>
-          <a href="pages/request.html">request</a>
-          <a href="pages/login.html">Login</a>
-          <a href="pages/signup.html">Signup</a>
+          <a href="../index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <!-- Same folder -->
+          <a href="find_donors.html">Find Donors</a>
+          <a href="request.html">Request</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Signup</a>
+          <a href="requestpage.html">RequestPage</a>
         </nav>
       </div>
     </header>
     <div class="container">
-        <h2>Submit Blood Request</h2>
-        <form id="requestForm">
-            <label for="patient_name">Patient Name (optional)</label>
-            <input type="text" id="patient_name" name="patient_name" placeholder="Patient Name">
+      <h2>Submit Blood Request</h2>
+      <form id="requestForm">
+        <label for="patient_name">Patient Name (optional)</label>
+        <input
+          type="text"
+          id="patient_name"
+          name="patient_name"
+          placeholder="Patient Name"
+        />
 
-            <label for="blood_group">Blood Group</label>
-            <input type="text" id="blood_group" name="blood_group" placeholder="Blood Group" required>
+        <label for="blood_group">Blood Group</label>
+        <input
+          type="text"
+          id="blood_group"
+          name="blood_group"
+          placeholder="Blood Group"
+          required
+        />
 
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" placeholder="City" required>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="City" required />
 
-            <label for="units_needed">Units Needed</label>
-            <input type="number" id="units_needed" name="units_needed" value="1" min="1" required>
+        <label for="units_needed">Units Needed</label>
+        <input
+          type="number"
+          id="units_needed"
+          name="units_needed"
+          value="1"
+          min="1"
+          required
+        />
 
-            <button type="submit">Submit Request</button>
-        </form>
+        <button type="submit">Submit Request</button>
+      </form>
 
-        <div id="message"></div>
+      <div id="message"></div>
     </div>
 
     <script src="/js/request.js"></script>
     <footer>
       <p>© 2025 Drop4Life | All Rights Reserved</p>
     </footer>
-</body>
+  </body>
 </html>
