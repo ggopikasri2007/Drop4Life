@@ -1,4 +1,4 @@
-
+/* 
 header {
   background-color: #1E3A8A;  
   color: white;
@@ -104,10 +104,173 @@ body {
 
 
 footer {
-  background: #1E3A8A; /* Matches header */
+  background: #1E3A8A; 
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 50px;
   clear: both;
+} */
+ /* GLOBAL */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #F1F5F9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background-color: #1E3A8A;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* SIGNUP SECTION */
+.signup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* CARD */
+.signup-card {
+  background: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.signup-card h2 {
+  margin-bottom: 25px;
+  color: #1E3A8A;
+  font-size: 28px;
+}
+
+/* INPUTS */
+.signup-card input,
+.signup-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #CBD5E1;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.signup-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1E3A8A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-card button:hover {
+  background-color: #2563EB;
+}
+
+/* LOGIN TEXT */
+.login-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #1E3A8A;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background: #1E3A8A;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+
+/* ------------------ */
+/* MOBILE RESPONSIVE */
+/* ------------------ */
+
+@media (max-width: 768px) {
+
+  header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .signup-section {
+    padding: 40px 15px;
+  }
+
+  .signup-card {
+    padding: 30px 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .signup-card h2 {
+    font-size: 22px;
+  }
+
+  .signup-card input,
+  .signup-card select {
+    font-size: 13px;
+  }
+
 }
