@@ -1,14 +1,17 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
+
     const form = document.getElementById("loginForm");
 
     form.addEventListener("submit", function (e) {
+
         e.preventDefault();
 
+        const email = document.querySelector("input[name='email']").value;
+        const password = document.querySelector("input[name='password']").value;
+
         const loginData = {
-            email: document.querySelector("input[name='email']").value,
-            password: document.querySelector("input[name='password']").value
+            email: email,
+            password: password
         };
 
         fetch("https://blooddonationbackend-beryl.vercel.app/auth/login", {
@@ -16,21 +19,41 @@ document.addEventListener("DOMContentLoaded", function () {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(loginData)
         })
-        .then(res => res.json())
-        .then(data => {
-            if (data.message === "Login successful") {
-               
+
+        .then(function(res){
+            return res.json();
+        })
+
+        .then(function(data){
+
+            if(data.message === "Login successful"){
+
+                // user id save
                 localStorage.setItem("userId", data.user_id);
 
+                // donor name save (email used as name)
+                localStorage.setItem("donor_name", email);
+
                 alert("Login successful!");
+
                 window.location.href = "dashboard.html";
-            } else {
+
+            }else{
+
                 alert(data.detail || "Login failed!");
+
             }
+
         })
-        .catch(err => {
+
+        .catch(function(err){
+
             console.error(err);
+
             alert("Server error!");
+
         });
+
     });
+
 });
