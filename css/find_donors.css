@@ -113,6 +113,15 @@ footer {
   padding: 15px 0;
   margin-top: 50px;
 }
+.status-available{
+color:green;
+font-weight:bold;
+}
+
+.status-unavailable{
+color:red;
+font-weight:bold;
+}
 
 /* ===== TABLET ===== */
 @media screen and (max-width: 992px) {
