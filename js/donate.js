@@ -5,9 +5,7 @@ const donatedBtn = document.getElementById("donatedBtn");
 const notDonatedBtn = document.getElementById("notDonatedBtn");
 
 
-/* -------------------------
-   FORMAT DATE (NO TIME)
---------------------------*/
+
 
 function formatDate(dateString){
 
@@ -21,9 +19,7 @@ function formatDate(dateString){
 }
 
 
-/* -------------------------
-   I HAVE DONATED
---------------------------*/
+
 
 donatedBtn.addEventListener("click", function(){
 
@@ -59,9 +55,6 @@ fetch(`https://blooddonationbackend-beryl.vercel.app/donation/confirm/${userId}`
 });
 
 
-/* -------------------------
-   I HAVE NOT DONATED YET
---------------------------*/
 
 notDonatedBtn.addEventListener("click", function(){
 

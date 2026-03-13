@@ -1,127 +1,135 @@
- body {
+/* ===== GLOBAL ===== */
+body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
 }
+
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 85%;
+  margin: auto;
 }
 
+/* ===== HEADER ===== */
 header {
   background-color: #1e3a8a;
   padding: 20px 0;
   color: white;
-  margin-bottom: 10px;
 }
+
 header h1 {
   display: inline-block;
   margin: 0;
 }
-nav{
+
+nav {
   float: right;
 }
+
 nav a {
   color: white;
   text-decoration: none;
-  margin: 15px;
+  margin: 0 12px;
   font-weight: 500;
 }
 
 nav a:hover,
 nav a.active {
   text-decoration: underline;
-} 
+}
+
+/* ===== TITLE ===== */
 .title {
   text-align: center;
-  margin-top: 30px;
-  font-size: 24px;
+  margin-top: 40px;
+  font-size: 30px;
   font-weight: 600;
 }
 
-
-.donor-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px;
+/* ===== DONOR GRID ===== */
+.donor-grid {
+  width: 85%;
+  margin: auto;
   padding: 30px 0;
-}
- @media screen and (max-width: 992px) { 
- .donor-container {
-    grid-template-columns: repeat(2, 1fr);
-  } 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-
- @media screen and (max-width: 600px) {
-  .donor-container {
-    grid-template-columns: 1fr;
-  } 
-} 
-
-
+/* ===== DONOR CARD ===== */
 .donor-card {
   background: white;
-  width: 250px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.donor-card:hover {
+  transform: translateY(-4px);
 }
 
 .donor-card h3 {
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
-.blood {
+.donor-card p {
+  margin: 6px 0;
+}
+
+/* ===== STATUS ===== */
+.status-available {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.status-unavailable {
   color: red;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.status {
-  margin: 10px 0;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.request-btn {
-  background: #25D366;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+/* ===== WHATSAPP BUTTON ===== */
+.whatsapp-btn {
   display: inline-block;
+  margin-top: 12px;
+  background-color:  #1e3a8a;
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-.request-btn:hover {
-  background: #1ebe5d;
+.whatsapp-btn:hover {
+  background-color: #1e3a8a;
 }
 
-
+/* ===== FOOTER ===== */
 footer {
   background-color: #1e3a8a;
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 50px;
-} 
+}
 
-
-
-
-/* TABLET */
+/* ===== TABLET ===== */
 @media screen and (max-width: 992px) {
-  .donor-container {
+  .donor-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media screen and (max-width: 600px) {
-  .donor-container {
+  nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .donor-grid {
     grid-template-columns: 1fr;
   }
 }
-

@@ -22,7 +22,7 @@ fetch("https://blooddonationbackend-beryl.vercel.app/donation/available-donors")
         <p>Blood Group: ${donor.blood_group}</p>
         <p>City: ${donor.city}</p>
         <p class="${donor.status === "Available" ? "status-available" : "status-unavailable"}">${donor.status}</p>
-        <a href="${whatsappLink}" target="_blank" class="whatsapp-btn">Request via WhatsApp</a>
+        <a href="${whatsappLink}" target="_blank" class="whatsapp-btn">chat via whatsapp</a>
       `;
       container.appendChild(card);
     });

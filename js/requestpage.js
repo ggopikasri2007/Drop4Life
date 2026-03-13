@@ -1,48 +1,37 @@
 const API_URL = "https://blooddonationbackend-beryl.vercel.app/request";
 
 function loadRequests() {
+  const tbody = document.getElementById("requests-body");
 
-const tbody = document.getElementById("requests-body");
+  fetch(API_URL)
+    .then(function (response) {
+      return response.json();
+    })
 
-fetch(API_URL)
+    .then(function (data) {
+      console.log("Requests:", data);
 
-.then(function(response){
-return response.json();
-})
+      tbody.innerHTML = "";
 
-.then(function(data){
+      if (!data || data.length === 0) {
+        tbody.innerHTML = "<tr><td colspan='6'>No Requests Found</td></tr>";
 
-console.log("Requests:", data);
+        return;
+      }
 
-tbody.innerHTML = "";
+      data.forEach(function (req) {
+        const row = document.createElement("tr");
 
-if(!data || data.length === 0){
+        let buttonHTML = "";
 
-tbody.innerHTML =
-"<tr><td colspan='6'>No Requests Found</td></tr>";
+        // status check
+        if (req.status === "accepted" || req.status === "completed") {
+          buttonHTML = "<button disabled>Donated</button>";
+        } else {
+          buttonHTML = `<button onclick="donate(${req.request_id})">Donate</button>`;
+        }
 
-return;
-
-}
-
-data.forEach(function(req){
-
-const row = document.createElement("tr");
-
-let buttonHTML = "";
-
-// status check
-if(req.status === "accepted" || req.status === "completed"){
-
-buttonHTML = "<button disabled>Donated</button>";
-
-}else{
-
-buttonHTML = `<button onclick="donate(${req.request_id})">Donate</button>`;
-
-}
-
-row.innerHTML = `
+        row.innerHTML = `
 <td>${req.patient_name || "Unknown"}</td>
 <td>${req.blood_group}</td>
 <td>${req.city}</td>
@@ -51,72 +40,53 @@ row.innerHTML = `
 <td>${buttonHTML}</td>
 `;
 
-tbody.appendChild(row);
+        tbody.appendChild(row);
+      });
+    })
 
-});
+    .catch(function (error) {
+      console.error("Error loading requests:", error);
 
-})
-
-.catch(function(error){
-
-console.error("Error loading requests:", error);
-
-tbody.innerHTML =
-"<tr><td colspan='6'>Failed to load requests</td></tr>";
-
-});
-
+      tbody.innerHTML = "<tr><td colspan='6'>Failed to load requests</td></tr>";
+    });
 }
 
+function donate(id) {
+  console.log("Donate clicked:", id);
 
+  fetch(API_URL + "/" + id, {
+    method: "PUT",
 
-function donate(id){
+    headers: {
+      "Content-Type": "application/json",
+    },
 
-console.log("Donate clicked:", id);
+    body: JSON.stringify({
+      units_received: 1,
+      status: "accepted",
+    }),
+  })
+    .then(function (response) {
+      if (!response.ok) {
+        throw new Error("Update failed");
+      }
 
-fetch(API_URL + "/" + id , {
+      return response.json();
+    })
 
-method:"PUT",
+    .then(function (data) {
+      console.log("Updated:", data);
 
-headers:{
-"Content-Type":"application/json"
-},
+      alert("Donation successful!");
 
-body:JSON.stringify({
-units_received:1,
-status:"accepted"
-})
+      loadRequests();
+    })
 
-})
+    .catch(function (error) {
+      console.error("Error:", error);
 
-.then(function(response){
-
-if(!response.ok){
-throw new Error("Update failed");
-}
-
-return response.json();
-
-})
-
-.then(function(data){
-
-console.log("Updated:", data);
-
-alert("Donation successful!");
-
-loadRequests();
-
-})
-
-.catch(function(error){
-
-console.error("Error:", error);
-
-alert("Donation failed");
-
-});
-
+      alert("Donation failed");
+    });
 }
 
 loadRequests();

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Failed to load profile for editing!");
         });
 
-    // Handle form submission
+   
     const form = document.getElementById("editProfileForm");
     form.addEventListener("submit", (e) => {
         e.preventDefault();
