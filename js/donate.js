@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Donate button click
   donatedBtn.addEventListener("click", function () {
-    fetch(`https://blooddonationbackend-beryl.vercel.app/donation/confirm/${userId}`, {
+    fetch(`https://blooddonationbackend-beryl.vercel.appdonation/confirm/${userId}`, {
       method: "POST"
     })
     .then(res => res.json())

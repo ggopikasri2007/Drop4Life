@@ -126,7 +126,7 @@ function renderDonors(donors) {
 
 // Fetch donors
 function fetchDonors() {
-  fetch("https://blooddonationbackend-beryl.vercel.app/donation/available-donors")
+  fetch("https://blooddonationbackend-beryl.vercel.appdonation/available-donors")
     .then(res => {
       if (!res.ok) throw new Error("Network response was not ok");
       return res.json();
