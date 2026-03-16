@@ -1,48 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Edit Profile | Drop4Life</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/edit_profile.css">
-</head>
-<body>
-
-<header>
-    <div class="container">
-      <h1>Drop4Life</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/edit_profile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Drop4Life</h1>
         <nav>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="donate.html">Donate</a>
-            <a href="myprofile.html">My Profile</a>
-            <a href="../index.html">Logout</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="donate.html">Donate</a>
+          <a href="myprofile.html">My Profile</a>
+          <a href="../index.html">Logout</a>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 
-<section class="edit-profile-section">
-    <div class="edit-profile-card">
+    <section class="edit-profile-section">
+      <div class="edit-profile-card">
         <h2>Edit Profile</h2>
         <form id="editProfileForm">
-            <input type="text" id="full_name" name="full_name" placeholder="Full Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="number" id="age" name="age" placeholder="Age" min="18" required>
-            
-            <!-- Blood group is read-only -->
-            <!-- <input type="text" id="blood_group" name="blood_group" placeholder="Blood Group" readonly> -->
+          <input
+            type="text"
+            id="full_name"
+            name="full_name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Age"
+            min="18"
+            required
+          />
 
-            <input type="text" id="city" name="city" placeholder="City" required>
-            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-            <button type="submit">Save Changes</button>
+          <!-- Blood group is read-only -->
+          <!-- <input type="text" id="blood_group" name="blood_group" placeholder="Blood Group" readonly> -->
+
+          <input
+            type="text"
+            id="city"
+            name="city"
+            placeholder="City"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <button type="submit">Save Changes</button>
         </form>
-    </div>
-</section>
+      </div>
+    </section>
 
-<footer>
-    <p>© 2025 Drop4Life | All Rights Reserved</p>
-</footer>
+    <footer>
+      <p>© 2025 Drop4Life | All Rights Reserved</p>
+    </footer>
 
-
-<script src="../js/edit_profile.js"></script>
-</body>
+    <script src="../js/edit_profile.js"></script>
+  </body>
 </html>

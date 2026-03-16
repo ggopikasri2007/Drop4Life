@@ -1,4 +1,4 @@
- body {
+body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
@@ -18,7 +18,7 @@ header h1 {
   display: inline-block;
   margin: 0;
 }
-nav{
+nav {
   float: right;
 }
 nav a {
@@ -32,8 +32,6 @@ nav a:hover,
 nav a.active {
   text-decoration: underline;
 }
-
-
 
 .edit-profile-section {
   padding: 60px 0;
@@ -103,21 +101,17 @@ nav a.active {
   background-color: #2563eb;
 }
 
-
-
 footer {
   background-color: #1e3a8a;
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 50px;
-} 
-
+}
 
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-
   header .container {
     flex-direction: column;
     gap: 10px;
@@ -131,11 +125,9 @@ footer {
   .edit-profile-card {
     padding: 25px;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .edit-profile-card {
     padding: 20px;
   }
@@ -143,5 +135,4 @@ footer {
   .edit-profile-card h2 {
     font-size: 22px;
   }
-
 }

@@ -1,4 +1,4 @@
- body {
+body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
@@ -18,7 +18,7 @@ header h1 {
   display: inline-block;
   margin: 0;
 }
-nav{
+nav {
   float: right;
 }
 nav a {
@@ -33,7 +33,6 @@ nav a.active {
   text-decoration: underline;
 }
 
-
 /* PAGE TITLE */
 h2 {
   text-align: center;
@@ -47,7 +46,7 @@ form {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 form label {
@@ -103,7 +102,6 @@ footer {
 /* ---------------- */
 
 @media (max-width: 768px) {
-
   header .container {
     flex-direction: column;
     gap: 10px;
@@ -117,5 +115,4 @@ footer {
   form {
     padding: 20px;
   }
-
 }

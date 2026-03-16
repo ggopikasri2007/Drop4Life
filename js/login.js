@@ -59,59 +59,46 @@
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("loginForm");
 
-    const form = document.getElementById("loginForm");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    form.addEventListener("submit", function (e) {
+    const email = document.querySelector("input[name='email']").value;
+    const password = document.querySelector("input[name='password']").value;
 
-        e.preventDefault();
+    const loginData = {
+      email: email,
+      password: password,
+    };
 
-        const email = document.querySelector("input[name='email']").value;
-        const password = document.querySelector("input[name='password']").value;
+    fetch("https://blooddonationbackend-beryl.vercel.app/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(loginData),
+    })
+      .then(function (res) {
+        return res.json();
+      })
 
-        const loginData = {
-            email: email,
-            password: password
-        };
+      .then(function (data) {
+        if (data.message === "Login successful") {
+          // ✅ correct key
+          localStorage.setItem("user_id", data.user_id);
 
-        fetch("https://blooddonationbackend-beryl.vercel.app/auth/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(loginData)
-        })
+          localStorage.setItem("donor_name", email);
 
-        .then(function(res){
-            return res.json();
-        })
+          alert("Login successful!");
 
-        .then(function(data){
+          window.location.href = "dashboard.html";
+        } else {
+          alert(data.detail || "Login failed!");
+        }
+      })
 
-            if(data.message === "Login successful"){
-
-                // ✅ correct key
-                localStorage.setItem("user_id", data.user_id);
-
-                localStorage.setItem("donor_name", email);
-
-                alert("Login successful!");
-
-                window.location.href = "dashboard.html";
-
-            }else{
-
-                alert(data.detail || "Login failed!");
-
-            }
-
-        })
-
-        .catch(function(err){
-
-            console.error(err);
-            alert("Server error!");
-
-        });
-
-    });
-
+      .catch(function (err) {
+        console.error(err);
+        alert("Server error!");
+      });
+  });
 });

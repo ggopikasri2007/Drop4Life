@@ -1,4 +1,4 @@
- body {
+body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
@@ -18,7 +18,7 @@ header h1 {
   display: inline-block;
   margin: 0;
 }
-nav{
+nav {
   float: right;
 }
 nav a {
@@ -32,7 +32,6 @@ nav a:hover,
 nav a.active {
   text-decoration: underline;
 }
-
 
 .profile-section {
   display: flex;
@@ -61,7 +60,6 @@ nav a.active {
   color: #333;
 }
 
-
 .edit-btn {
   display: block;
   text-align: center;
@@ -78,22 +76,19 @@ nav a.active {
   background-color: #2563eb;
 }
 
-
 footer {
   background: #1e3a8a;
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 250px;
-} 
-
+}
 
 /* ---------------- */
 /* MOBILE RESPONSIVE */
 /* ---------------- */
 
 @media (max-width: 768px) {
-
   header .container {
     flex-direction: column;
     gap: 10px;
@@ -107,11 +102,9 @@ footer {
   .profile-card {
     padding: 25px;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .profile-card {
     padding: 20px;
   }
@@ -119,5 +112,4 @@ footer {
   .profile-info p {
     font-size: 14px;
   }
-
 }

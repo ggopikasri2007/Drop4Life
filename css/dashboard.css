@@ -1,17 +1,15 @@
- 
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
-  background-color: #F1F5F9;
+  background-color: #f1f5f9;
 }
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
-
 header {
-  background-color: #1E3A8A;
+  background-color: #1e3a8a;
   color: white;
   padding: 20px 0;
   margin-bottom: 10px;
@@ -22,26 +20,25 @@ header h1 {
   margin: 0;
 }
 nav {
-  float:right
+  float: right;
 }
 nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  margin:15px
+  margin: 15px;
 }
 nav a:hover,
 nav a.active {
   text-decoration: underline;
 }
 
-
 .dashboard-hero {
   text-align: center;
   padding: 40px 20px;
 }
 .dashboard-hero h2 {
-  color: #1E3A8A;
+  color: #1e3a8a;
   font-size: 32px;
   margin-bottom: 10px;
 }
@@ -49,7 +46,6 @@ nav a.active {
   color: #555;
   font-size: 16px;
 }
-
 
 .dashboard-cards {
   display: grid;
@@ -63,7 +59,7 @@ nav a.active {
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(37, 99, 235, 0.15);
-  border: 1px solid #CBD5E1;
+  border: 1px solid #cbd5e1;
   text-align: center;
   transition: 0.3s;
 }
@@ -73,7 +69,7 @@ nav a.active {
 }
 .dashboard-cards .card h3 {
   margin-bottom: 12px;
-  color: #1E3A8A;
+  color: #1e3a8a;
 }
 .dashboard-cards .card p {
   color: #555;
@@ -83,7 +79,7 @@ nav a.active {
 .dashboard-cards .card .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #1E3A8A;
+  background-color: #1e3a8a;
   color: white;
   border-radius: 6px;
   text-decoration: none;
@@ -91,23 +87,19 @@ nav a.active {
   transition: 0.3s;
 }
 .dashboard-cards .card .btn:hover {
-  background-color: #2563EB;
+  background-color: #2563eb;
 }
 
-
 footer {
-  background: #1E3A8A;
+  background: #1e3a8a;
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 340px;
 }
- 
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-
   header .container {
     flex-direction: column;
     gap: 10px;
@@ -121,11 +113,9 @@ footer {
   .dashboard-hero h2 {
     font-size: 26px;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .dashboard-hero h2 {
     font-size: 22px;
   }
@@ -133,5 +123,4 @@ footer {
   .dashboard-hero p {
     font-size: 14px;
   }
-
 }

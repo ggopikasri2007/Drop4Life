@@ -1,44 +1,40 @@
-
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background-color: #F1F5F9;
+  background-color: #f1f5f9;
 }
 
 .container {
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-
 header {
-  background-color: #1E3A8A;
+  background-color: #1e3a8a;
   color: white;
   padding: 20px 0;
   margin-bottom: 10px;
 }
-header h1{
+header h1 {
   display: inline-block;
-  margin:0;
+  margin: 0;
 }
 
-nav{
-  float:right;
+nav {
+  float: right;
 }
-
 
 nav a {
   color: white;
   text-decoration: none;
-  margin:15px;
+  margin: 15px;
   font-weight: 500;
 }
 
 nav a:hover,
 .active {
- text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 .login-section {
   display: flex;
@@ -52,13 +48,13 @@ nav a:hover,
   padding: 40px;
   width: 400px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .login-card h2 {
   margin-bottom: 25px;
-  color: #1E3A8A;
+  color: #1e3a8a;
 }
 
 .login-card input {
@@ -66,14 +62,14 @@ nav a:hover,
   padding: 12px;
   margin-bottom: 15px;
   border-radius: 6px;
-  border: 1px solid #CBD5E1;
+  border: 1px solid #cbd5e1;
   font-size: 14px;
 }
 
 .login-card button {
   width: 100%;
   padding: 12px;
-  background-color: #1E3A8A;
+  background-color: #1e3a8a;
   color: white;
   border: none;
   border-radius: 6px;
@@ -83,7 +79,7 @@ nav a:hover,
 }
 
 .login-card button:hover {
-  background-color: #2563EB;
+  background-color: #2563eb;
 }
 
 .signup-text {
@@ -92,7 +88,7 @@ nav a:hover,
 }
 
 .signup-text a {
-  color: #1E3A8A;
+  color: #1e3a8a;
   text-decoration: none;
   font-weight: 500;
 }
@@ -101,21 +97,17 @@ nav a:hover,
   text-decoration: underline;
 }
 
-
 footer {
-  background: #1E3A8A;
+  background: #1e3a8a;
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 170px;
   clear: both;
-} 
-
-
+}
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-
   header .container {
     flex-direction: column;
     gap: 10px;
@@ -129,11 +121,9 @@ footer {
   .login-card {
     padding: 25px;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .login-card {
     padding: 20px;
   }
@@ -141,5 +131,4 @@ footer {
   .login-card h2 {
     font-size: 22px;
   }
-
 }

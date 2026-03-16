@@ -1,8 +1,7 @@
-
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
-  background:  #F1F5F9;
+  background: #f1f5f9;
   color: #333;
 }
 
@@ -11,48 +10,45 @@ body {
   margin: 0 auto;
 }
 
-
-body { 
-    font-family: 'Segoe UI', sans-serif; 
-    margin: 0;
-  
-     }
-.container { 
-     width: 80%; 
-    margin: 0 auto;
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
 }
-header { 
-    background:  #1E3A8A; 
-    color: white;
-    padding: 20px 0; }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  background: #1e3a8a;
+  color: white;
+  padding: 20px 0;
+}
 header h1 {
-     display: inline-block; 
-     margin: 0; 
+  display: inline-block;
+  margin: 0;
 }
-nav { 
-    float: right;
-   
-     }
+nav {
+  float: right;
+}
 nav a {
-     color: white; 
-     text-decoration: none; 
-     margin: 0 15px; 
-     font-weight: 500;
-     }
-nav a:hover, .active {
-     text-decoration: underline;
-     }
-
-
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+nav a:hover,
+.active {
+  text-decoration: underline;
+}
 
 .blood-groups {
   padding: 80px 10%;
   text-align: center;
-  background:  #F1F5F9;
+  background: #f1f5f9;
 }
 
 .blood-groups h2 {
-  color: #0F172A;
+  color: #0f172a;
   font-size: 2rem;
   margin-bottom: 50px;
 }
@@ -64,11 +60,13 @@ nav a:hover, .active {
 }
 
 .group-card {
-  background: #F1F5F9 ;
+  background: #f1f5f9;
   padding: 25px 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .group-card img {
@@ -77,7 +75,7 @@ nav a:hover, .active {
 }
 
 .group-card h3 {
-  color: #0F172A;
+  color: #0f172a;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -89,18 +87,17 @@ nav a:hover, .active {
 
 .group-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 .image-gallery {
   text-align: center;
   padding: 80px 10%;
-  background:#F1F5F9 ;
+  background: #f1f5f9;
 }
 
 .image-gallery h2 {
-  color: #0F172A;
+  color: #0f172a;
   margin-bottom: 30px;
   font-size: 2rem;
 }
@@ -116,32 +113,29 @@ nav a:hover, .active {
   height: 220px;
   object-fit: cover;
   border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-
 footer {
-  background:  #1E3A8A;
+  background: #1e3a8a;
   color: white;
   text-align: center;
   padding: 15px 0;
   font-size: 0.9rem;
   margin-top: 50px;
 }
- 
-
-
 
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-
   header .container {
     flex-direction: column;
     gap: 10px;
@@ -156,13 +150,10 @@ footer {
   .image-gallery h2 {
     font-size: 1.6rem;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .gallery img {
     height: 180px;
   }
-
 }

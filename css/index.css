@@ -1,4 +1,4 @@
- body {
+body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
@@ -7,7 +7,6 @@
   width: 80%;
   margin: 0 auto;
 }
-
 
 header {
   background-color: #1e3a8a;
@@ -429,28 +428,26 @@ font-size:28px;
 }
 
 /* MOBILE */
-@media(max-width:600px){
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 
-header .container{
-flex-direction:column;
-text-align:center;
-gap:10px;
-}
+  nav {
+    justify-content: center;
+  }
 
-nav{
-justify-content:center;
-}
+  .hero-image {
+    height: 220px;
+  }
 
-.hero-image{
-height:220px;
-}
+  .hero-cta h2 {
+    font-size: 24px;
+  }
 
-.hero-cta h2{
-font-size:24px;
-}
-
-.hero-cta p{
-font-size:16px;
-}
-
+  .hero-cta p {
+    font-size: 16px;
+  }
 }

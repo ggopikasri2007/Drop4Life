@@ -1,4 +1,4 @@
- body {
+body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
@@ -7,7 +7,6 @@
   width: 80%;
   margin: 0 auto;
 }
-
 
 header {
   background-color: #1e3a8a;
@@ -34,8 +33,6 @@ nav a:hover,
   text-decoration: underline;
 }
 
-
-
 .title {
   text-align: center;
   margin-top: 40px;
@@ -58,7 +55,7 @@ nav a:hover,
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 
@@ -90,7 +87,7 @@ nav a:hover,
 .whatsapp-btn {
   display: inline-block;
   margin-top: 12px;
-  background-color:  #1e3a8a;
+  background-color: #1e3a8a;
   color: white;
   padding: 10px 14px;
   text-decoration: none;
@@ -110,14 +107,14 @@ footer {
   padding: 15px 0;
   margin-top: 50px;
 }
-.status-available{
-color:green;
-font-weight:bold;
+.status-available {
+  color: green;
+  font-weight: bold;
 }
 
-.status-unavailable{
-color:red;
-font-weight:bold;
+.status-unavailable {
+  color: red;
+  font-weight: bold;
 }
 
 /* ===== TABLET ===== */
