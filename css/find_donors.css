@@ -1,44 +1,41 @@
-/* ===== GLOBAL ===== */
-body {
+ body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   background-color: #f1f5f9;
 }
-
 .container {
-  width: 85%;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* ===== HEADER ===== */
+
 header {
   background-color: #1e3a8a;
   padding: 20px 0;
   color: white;
+  margin-bottom: 10px;
 }
 
 header h1 {
   display: inline-block;
   margin: 0;
 }
-
 nav {
   float: right;
 }
-
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 12px;
+  margin: 15px;
   font-weight: 500;
 }
-
 nav a:hover,
-nav a.active {
+.active {
   text-decoration: underline;
 }
 
-/* ===== TITLE ===== */
+
+
 .title {
   text-align: center;
   margin-top: 40px;
