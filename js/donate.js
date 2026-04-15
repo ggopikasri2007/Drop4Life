@@ -28,12 +28,12 @@ donatedBtn.addEventListener("click", function () {
 
       nextDate.setDate(nextDate.getDate() + 90);
 
-      const formattedDate = formatDate(nextDate);
+      const formattedDate = formatDate(nextDate);                                                                    
 
       statusBox.innerHTML = `
         ❌ You are not eligible now.<br>
-        You can donate again after <b>3 months</b>.<br><br>
-        <b>Next Donation Date : ${formattedDate}</b>
+        You can donate again after <b>3 months</b>.<br><br>      
+        <b>Next Donation Date : ${formattedDate}</b>                      
     `;
     })
 
@@ -49,82 +49,3 @@ notDonatedBtn.addEventListener("click", function () {
 `;
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const statusBox = document.getElementById("statusBox");
-//   const donatedBtn = document.getElementById("donatedBtn");
-//   const notDonatedBtn = document.getElementById("notDonatedBtn");
-
-//   // Get logged-in user_id from localStorage
-//   const userId = localStorage.getItem("userId");
-//   if (!userId) {
-//     statusBox.innerHTML = "⚠️ Please login first to donate.";
-//     donatedBtn.disabled = true;
-//     notDonatedBtn.disabled = true;
-//     return;
-//   }
-
-//   // Helper to format date
-//   function formatDate(dateString) {
-//     const date = new Date(dateString + "T00:00:00");
-//     const day = String(date.getDate()).padStart(2,'0');
-//     const month = String(date.getMonth()+1).padStart(2,'0');
-//     const year = date.getFullYear();
-//     return `${day}-${month}-${year}`;
-//   }
-
-//   // Fetch current eligibility on page load
-//   function checkEligibility() {
-//     fetch(`https://blooddonationbackend-beryl.vercel.app/donation/eligibility/${userId}`)
-//       .then(res => res.json())
-//       .then(data => {
-//         if (data.eligible) {
-//           statusBox.innerHTML = `✅ You are eligible to donate.`;
-//         } else {
-//           const formattedDate = formatDate(data.next_eligible_date);
-//           statusBox.innerHTML = `
-//             ❌ You are not eligible now.<br>
-//             You can donate again after 3 months.<br>
-//             <b>Next Donation Date: ${formattedDate}</b>
-//           `;
-//         }
-//       })
-//       .catch(err => {
-//         console.error(err);
-//         statusBox.innerHTML = "Error checking eligibility.";
-//       });
-//   }
-
-//   checkEligibility(); // initial check
-
-//   // Donate button click
-//   donatedBtn.addEventListener("click", function () {
-//     fetch(`https://blooddonationbackend-beryl.vercel.app/donation/confirm/${userId}`, {
-//       method: "POST"
-//     })
-//     .then(res => res.json())
-//     .then(data => {
-//       const nextDate = new Date(data.donation_date);
-//       nextDate.setDate(nextDate.getDate() + 90);
-//       const formattedDate = formatDate(nextDate.toISOString().split("T")[0]);
-
-//       statusBox.innerHTML = `
-//         ❌ You are not eligible now.<br>
-//         You can donate again after 3 months.<br>
-//         <b>Next Donation Date: ${formattedDate}</b>
-//       `;
-
-//       // Optional: Refresh Find Donors page if open
-//       localStorage.setItem("donationUpdated", "true");
-//     })
-//     .catch(err => {
-//       console.error(err);
-//       statusBox.innerHTML = "Error confirming donation.";
-//     });
-//   });
-
-//   // Not Donated button
-//   notDonatedBtn.addEventListener("click", function () {
-//     statusBox.innerHTML = `✅ You are eligible to donate.`;
-//   });
-
-// });
